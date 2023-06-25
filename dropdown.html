@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .dropdown{
+        position: relative;
+        display: inline-block;  
+        }
+        .dropdown-content{
+            display: none; 
+            position: absolute;
+            background-color: yellow;
+            width: 1600px;
+            box-shadow: 9px 10px 2px rgba(23, 169, 30, 22);
+            padding: 12px;
+            z-index: 1;
+           overflow-y: scroll;
+           cursor: all-scroll;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<h2>Hoverable properrty</h2>
+<p>Move the mouse over the text to open the dropdown effect</p>
+
+<div class="dropdown">
+    <div>mouse over it</div>
+<div class="dropdown-content">
+    <p>manoj rajput</p>
+</div>
+</div>
+</body>
+</html>
